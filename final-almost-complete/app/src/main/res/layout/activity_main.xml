@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--냉실장 테이블바-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/toolbar_background"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_ice"
+            android:layout_width="61dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <ImageButton
+            android:id="@+id/bell_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.444"
+            app:srcCompat="@drawable/img_3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/user_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="160dp"
+            android:drawableBottom="@drawable/main_logo"
+            android:text="냉실장"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_ice"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="254dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/my_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/round_button"
+                    android:drawableBottom="@drawable/img4_size"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:text="나의 냉장고"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/com_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/round_button"
+                    android:drawableBottom="@drawable/img5_size"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:text="냉장고를 부탁해"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/recipe_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/round_button"
+                    android:drawableBottom="@drawable/img_6"
+                    android:padding="15dp"
+                    android:text="레시피"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager_banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout_menu" />
+
+            <LinearLayout
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/banner_button_background"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:layout_gravity="end"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPager_banner"
+                app:layout_constraintRight_toRightOf="@+id/viewPager_banner">
+
+                <TextView
+                    android:id="@+id/textView_current_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="페이지"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView_total_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보기"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scrView1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview1" />
+
+            <ImageView
+                android:id="@+id/scrView2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview2" />
+
+            <ImageView
+                android:id="@+id/scrView3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview3" />
+
+            <ImageView
+                android:id="@+id/scrView4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview4" />
+
+            <ImageView
+                android:id="@+id/scrView5"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview5" />
+
+            <ImageView
+                android:id="@+id/scrView6"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview6" />
+
+            <ImageView
+                android:id="@+id/scrView7"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview8" />
+
+            <ImageView
+                android:id="@+id/scrView8"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview7" />
+
+            <ImageView
+                android:id="@+id/scrView9"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/scrollview9" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

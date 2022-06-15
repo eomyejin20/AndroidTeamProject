@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--bold-->
+    <font
+        android:font="@font/imhyeminbold"
+        android:fontStyle="normal"
+        android:fontWeight="600"
+        app:font="@font/imhyeminbold"
+        app:fontStyle="normal"
+        app:fontWeight="1000" />
+
+
+</font-family>

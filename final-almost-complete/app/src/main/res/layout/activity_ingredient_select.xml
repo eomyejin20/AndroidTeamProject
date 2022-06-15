@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/go_main_btn"
+            android:layout_width="67dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/main_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <ImageButton
+            android:id="@+id/ingredient_add"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="#4BB6E8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/add_24" />
+
+        <TextView
+            android:id="@+id/title_please"
+            android:layout_width="226dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="160dp"
+            android:text="재료 추가"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:fontFamily="@font/custom_font_family"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.353"
+            app:layout_constraintStart_toEndOf="@+id/go_main_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/steak_241"
+                android:fontFamily="@font/custom_font_family"
+                android:text=" 육류"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="290dp"
+                android:stretchColumns="0,1,2,3">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/meat_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="곱창" />
+
+                    <Button
+                        android:id="@+id/meat_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="닭" />
+
+                    <Button
+                        android:id="@+id/meat_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="닭가슴살" />
+
+                    <Button
+                        android:id="@+id/meat_button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="닭고기" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/meat_button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="닭다리살" />
+
+                    <Button
+                        android:id="@+id/meat_button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="돼지갈비" />
+
+                    <Button
+                        android:id="@+id/meat_button7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="돼지고기" />
+
+                    <Button
+                        android:id="@+id/meat_button8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="목살" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/meat_button9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="베이컨" />
+
+                    <Button
+                        android:id="@+id/meat_button10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="불고기" />
+
+                    <Button
+                        android:id="@+id/meat_button11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="삼겹살" />
+
+                    <Button
+                        android:id="@+id/meat_button12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="소갈비" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/meat_button13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="쇠고기" />
+
+                    <Button
+                        android:id="@+id/meat_button14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="양고기" />
+
+                    <Button
+                        android:id="@+id/meat_button15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="양념육" />
+
+                    <Button
+                        android:id="@+id/meat_button16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="오리고기" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/carrot_24"
+                    android:fontFamily="@font/custom_font_family"
+                    android:text=" 신선식품/유제품"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="800dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="가지" />
+
+                        <Button
+                            android:id="@+id/ve_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="감자" />
+
+                        <Button
+                            android:id="@+id/ve_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고구마" />
+
+                        <Button
+                            android:id="@+id/ve_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고사리" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고추" />
+
+                        <Button
+                            android:id="@+id/ve_button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="곤드레" />
+
+                        <Button
+                            android:id="@+id/ve_button7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="깻잎" />
+
+                        <Button
+                            android:id="@+id/ve_button8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="다진마늘" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="달걀" />
+
+                        <Button
+                            android:id="@+id/ve_button10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="당근" />
+
+                        <Button
+                            android:id="@+id/ve_button11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="도라지" />
+
+                        <Button
+                            android:id="@+id/ve_button12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="두부" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="마" />
+
+                        <Button
+                            android:id="@+id/ve_button14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="메추리알" />
+
+                        <Button
+                            android:id="@+id/ve_button15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="무" />
+
+                        <Button
+                            android:id="@+id/ve_button16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="미나리" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="바질" />
+
+                        <Button
+                            android:id="@+id/ve_button18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="배추" />
+
+                        <Button
+                            android:id="@+id/ve_button19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="버섯" />
+
+                        <Button
+                            android:id="@+id/ve_button20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="부추" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="브로콜리" />
+
+                        <Button
+                            android:id="@+id/ve_button22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="상추" />
+
+                        <Button
+                            android:id="@+id/ve_button23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="샐러드" />
+
+                        <Button
+                            android:id="@+id/ve_button24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="생크림" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="숙주나물" />
+
+                        <Button
+                            android:id="@+id/ve_button26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="시금치" />
+
+                        <Button
+                            android:id="@+id/ve_button27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="애호박" />
+
+                        <Button
+                            android:id="@+id/ve_button28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="양배추" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="양상추" />
+
+                        <Button
+                            android:id="@+id/ve_button30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="양파" />
+
+                        <Button
+                            android:id="@+id/ve_button31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="연근" />
+
+                        <Button
+                            android:id="@+id/ve_button32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="연유" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="오이" />
+
+                        <Button
+                            android:id="@+id/ve_button34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="옥수수" />
+
+                        <Button
+                            android:id="@+id/ve_button35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="요거트" />
+
+                        <Button
+                            android:id="@+id/ve_button36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="우엉" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="우유" />
+
+                        <Button
+                            android:id="@+id/ve_button38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="치즈" />
+
+                        <Button
+                            android:id="@+id/ve_button39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="콩나물" />
+
+                        <Button
+                            android:id="@+id/ve_button40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="파" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/ve_button41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="파프리카" />
+
+                        <Button
+                            android:id="@+id/ve_button42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="피망" />
+
+                        <Button
+                            android:id="@+id/ve_button43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="호박" />
+
+                        <Button
+                            android:id="@+id/ve_button44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="쪽파" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/saltpepper24"
+                    android:fontFamily="@font/custom_font_family"
+                    android:text=" 양념/조미료/향신료/젓갈"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="800dp"
+                    android:stretchColumns="0,1,2,3">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="간장" />
+
+                        <Button
+                            android:id="@+id/seoson_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고추기름" />
+
+                        <Button
+                            android:id="@+id/seoson_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고추냉이" />
+
+                        <Button
+                            android:id="@+id/seoson_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고추장" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="고춧가루" />
+
+                        <Button
+                            android:id="@+id/seoson_button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="굴소스" />
+
+                        <Button
+                            android:id="@+id/seoson_button7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="김치" />
+
+                        <Button
+                            android:id="@+id/seoson_button8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="까나리 액젓" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="깍두기" />
+
+                        <Button
+                            android:id="@+id/seoson_button10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="꿀" />
+
+                        <Button
+                            android:id="@+id/seoson_button11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="된장" />
+
+                        <Button
+                            android:id="@+id/seoson_button12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="드레싱" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="들기름" />
+
+                        <Button
+                            android:id="@+id/seoson_button14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="들깨" />
+
+                        <Button
+                            android:id="@+id/seoson_button15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="딸기잼" />
+
+                        <Button
+                            android:id="@+id/seoson_button16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="마요네즈" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="맛술" />
+
+                        <Button
+                            android:id="@+id/seoson_button18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="머스타드" />
+
+                        <Button
+                            android:id="@+id/seoson_button19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="멸치 액젓" />
+
+                        <Button
+                            android:id="@+id/seoson_button20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="멸치가루" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="물엿" />
+
+                        <Button
+                            android:id="@+id/seoson_button22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="밀가루" />
+
+                        <Button
+                            android:id="@+id/seoson_button23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="버터" />
+
+                        <Button
+                            android:id="@+id/seoson_button24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="부침가루" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="새우젓" />
+
+                        <Button
+                            android:id="@+id/seoson_button26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="생강" />
+
+                        <Button
+                            android:id="@+id/seoson_button27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="설탕" />
+
+                        <Button
+                            android:id="@+id/seoson_button28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="소금" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="식용유" />
+
+                        <Button
+                            android:id="@+id/seoson_button30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="식초" />
+
+                        <Button
+                            android:id="@+id/seoson_button31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="쌈장" />
+
+                        <Button
+                            android:id="@+id/seoson_button32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="양념육소스" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="연겨자" />
+
+                        <Button
+                            android:id="@+id/seoson_button34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="올리고당" />
+
+                        <Button
+                            android:id="@+id/seoson_button35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="올리브유" />
+
+                        <Button
+                            android:id="@+id/seoson_button36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="장아찌" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="참기름" />
+
+                        <Button
+                            android:id="@+id/seoson_button38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="청국장" />
+
+                        <Button
+                            android:id="@+id/seoson_button39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="춘장" />
+
+                        <Button
+                            android:id="@+id/seoson_button40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="카놀라유" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/seoson_button41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="케첩" />
+
+                        <Button
+                            android:id="@+id/seoson_button42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="토마토 소스" />
+
+                        <Button
+                            android:id="@+id/seoson_button43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="튀김가루" />
+
+                        <Button
+                            android:id="@+id/seoson_button44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:text="후추" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/fish_24"
+                        android:fontFamily="@font/custom_font_family"
+                        android:text=" 어패류/해조류"
+                        android:textSize="24sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="349dp"
+                        android:stretchColumns="0,1,2,3">
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/fish_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="갈치" />
+
+                            <Button
+                                android:id="@+id/fish_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="건어물" />
+
+                            <Button
+                                android:id="@+id/fish_button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="게" />
+
+                            <Button
+                                android:id="@+id/fish_button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="고등어" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/fish_button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="굴" />
+
+                            <Button
+                                android:id="@+id/fish_button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="김" />
+
+                            <Button
+                                android:id="@+id/fish_button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="낙지" />
+
+                            <Button
+                                android:id="@+id/fish_button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="다시마" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/fish_button9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="멸치" />
+
+                            <Button
+                                android:id="@+id/fish_button10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="문어" />
+
+                            <Button
+                                android:id="@+id/fish_button11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="미역" />
+
+                            <Button
+                                android:id="@+id/fish_button12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="바지락" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/fish_button13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="새우" />
+
+                            <Button
+                                android:id="@+id/fish_button14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="연어" />
+
+                            <Button
+                                android:id="@+id/fish_button15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="오징어" />
+
+                            <Button
+                                android:id="@+id/fish_button16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="전복" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/fish_button17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="조개" />
+
+                            <Button
+                                android:id="@+id/fish_button18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="조기" />
+
+                            <Button
+                                android:id="@+id/fish_button19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="쭈꾸미" />
+
+                            <Button
+                                android:id="@+id/fish_button20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="홍합" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/cannedfood_24"
+                        android:text=" 인스턴트/반찬"
+                        android:fontFamily="@font/custom_font_family"
+                        android:textSize="24sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="168dp"
+                        android:stretchColumns="0,1">
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/instant_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="떡볶이" />
+
+                            <Button
+                                android:id="@+id/instant_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="라면" />
+
+                            <Button
+                                android:id="@+id/instant_button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="만두" />
+
+                            <Button
+                                android:id="@+id/instant_button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="소시지" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/instant_button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="순대" />
+
+                            <Button
+                                android:id="@+id/instant_button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="스팸" />
+
+                            <Button
+                                android:id="@+id/instant_button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="참치캔" />
+
+                            <Button
+                                android:id="@+id/instant_button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="튀김" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/noodles_24"
+                        android:text=" 기타"
+                        android:fontFamily="@font/custom_font_family"
+                        android:textSize="24sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:id="@+id/tableLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="290dp"
+                        android:stretchColumns="0,1,2,3">
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/other_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="기장" />
+
+                            <Button
+                                android:id="@+id/other_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="깨" />
+
+                            <Button
+                                android:id="@+id/other_button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="녹두" />
+
+                            <Button
+                                android:id="@+id/other_button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="당면" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/other_button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="떡" />
+
+                            <Button
+                                android:id="@+id/other_button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="면" />
+
+                            <Button
+                                android:id="@+id/other_button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="빵" />
+
+                            <Button
+                                android:id="@+id/other_button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="소면" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/other_button9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="쌀" />
+
+                            <Button
+                                android:id="@+id/other_button10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="어묵" />
+
+                            <Button
+                                android:id="@+id/other_button11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="중면" />
+
+                            <Button
+                                android:id="@+id/other_button12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_button"
+                                android:text="콩" />
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

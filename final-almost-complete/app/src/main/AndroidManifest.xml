@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practice.loginregister">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/refrigerator"
+        android:label="냉실장"
+        android:roundIcon="@drawable/refrigerator"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginRegister">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AllRecipeActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".UserActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MyRefrigeratorActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".IngredientSelectActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".PeriodInsertActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".CombineActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".CombinefinalActivity"
+            android:exported="true"/>
+        <!--여기에서 시작 액티비티 설정-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
